@@ -5,37 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+   
+    <title>math-form</title>
 </head>
 
 <body>
-
     <h1>Input Numbers</h1>
+
+    
     <form id="math-form">
         <div class="num-input">
-            <label for="fname">First Number:</label>
+            <label>First Number:</label>
             <input type="number" min="0" oninput="validity.valid||(value='');"><br><br>
-            <label for="fname">Second Number:</label>
+            <label>Second Number:</label>
             <input type="number" min="0" oninput="validity.valid||(value='');"><br><br>
-            <label for="fname">Third Number:</label>
+            <label>Third Number:</label>
             <input type="number" min="0" oninput="validity.valid||(value='');"><br><br>
         </div>
-        <input type="submit" value="Submit">
-
     </form>
-
 
     <script>
 
         const form = document.getElementById('math-form');
-
+        
 
         form.addEventListener('submit', (event) => {
 
             event.preventDefault();
-
-
+  
 
         })
 
@@ -43,6 +40,7 @@
 
 
 
+<button type="button" onclick="myFunction()">Submit</button>
 </body>
 
 </html>
